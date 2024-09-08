@@ -1,0 +1,130 @@
+/* Basic reset for margin and padding */
+body,
+h1,
+h2,
+h5,
+label,
+input,
+button,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100%;
+  position: relative; /* For positioning text over the image */
+}
+
+.right-side {
+  padding: 20px; /* Consistent padding */
+  background-color: #f4f4f4; /* Light background for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area without distortion */
+  opacity: 0.8; /* Slight transparency */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to truly center */
+  color: #fff; /* White text for contrast */
+  font-size: 1.5rem; /* Responsive font size */
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for readability */
+  padding: 15px; /* More padding for a better appearance */
+  border-radius: 8px; /* Slightly rounded corners */
+  text-align: center; /* Center text within the overlay */
+  max-width: 80%; /* Responsive width */
+}
+.heading {
+  font-size: 2rem; /* Larger heading */
+  color: #333; /* Darker text color for better readability */
+  text-align: center; /* Center align heading */
+  margin-top: 20px; /* Move the heading slightly higher */
+}
+
+.welcome {
+  margin-top: 40px; /* Increase the gap between h1 and h2 */
+  font-size: 1.5rem; /* Slightly smaller than heading */
+  color: #555; /* Medium gray text color */
+  text-align: center; /* Center align welcome text */
+}
+
+.input-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  width: 100%; /* Ensure input groups use full width */
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Consistent text color */
+}
+
+input {
+  padding: 12px; /* Increased padding for better user experience */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px; /* Set a max-width for consistency */
+}
+
+.login-button {
+  margin-top: 20px; /* Adjusted margin */
+  padding: 12px 24px; /* Increased padding for a more prominent button */
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 325px; /* Set a max-width for consistency */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.sign-up-link {
+  margin-top: 20px; /* Spacing above the sign-up link */
+  font-size: 14px; /* Slightly smaller text size */
+  color: #333; /* Darker text color for contrast */
+  text-align: center; /* Center the text */
+}
+
+.sign-up-link a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.sign-up-link a:hover {
+  text-decoration: underline; /* Underline on hover for better interaction */
+}
